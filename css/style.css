@@ -1,0 +1,94 @@
+* {
+    font-family: "Work Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(../assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: hsl(0, 100%, 100%);
+    margin: 120px 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media (min-width: 376px) {
+    body {
+        background-image: url(../assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        min-height: fit-content;
+        margin: 110px auto;
+        padding: 25px;
+    }
+    .text-icon p {
+        line-height: 1.7;
+    }
+}
+
+@media (min-width: 650px) {
+    .container {
+        width: 600px;
+    }
+}
+
+.container .first {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.first img {
+    width: 30px;
+    height: 30px;
+}
+
+.first h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text-icon {
+    margin-top: 30px;
+}
+
+.text-icon div {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    justify-content: space-between;
+}
+
+.text-icon div h3 {
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 20px;
+    
+}
+
+.icons {
+    position: relative;
+}
+
+
+.icons img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(292, 42%, 14%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text-icon p {
+    color: hsl(292, 16%, 49%);
+}
